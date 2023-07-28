@@ -7,4 +7,4 @@ temp4 = 30
 temp5 = 33
 sum = temp1 + temp2 + temp3 + temp4 + temp5
 average = sum / 5
-puts “Average temperature: ” + average.to_s
+puts "Average temperature: " + average.to_s
