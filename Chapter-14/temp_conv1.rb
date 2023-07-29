@@ -9,11 +9,10 @@ original_temperature = gets.strip[0].downcase
    
 if original_temperature == 'c'
    new_temperature = (current_temperature * 5 / 9) + 32
-   puts "New temperature: #{new_temperature} F"
-elsif original_temperature == 'f'
+   puts "New temperature: " + new_temperature.to_s + " F"
+ elsif original_temperature == 'f'
    new_temperature = (current_temperature - 32) * 9 / 5
-   puts "New temperature: #{new_temperature} C"
-else  # Can't process anything else
-    puts "Don't recognise temperature scale:  
-         #{original_temperature}"  
-end
+   puts "New temperature: " + new_temperature.to_s + " C"
+ else  # Can't process anything else
+    puts "Don't recognise temperature scale: " + original_temperature.to_s  
+ end
