@@ -2,11 +2,11 @@ puts 'Type in as many words as you want. When finished
      press \'Enter\' on an empty line'
 x = 0
 word = 'word1'
-array = []
+words = []
 while word != ''
   word = gets.chomp
-  array[x] = word
+  words[x] = word
   x = x + 1
 end
 puts ''
-puts array.sort
+puts words.sort
